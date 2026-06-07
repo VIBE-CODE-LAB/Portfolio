@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Sparkles } from "lucide-react";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import { HeroScene } from "./Scene3D";
 import { ClientOnly } from "./ClientOnly";
-
-const HeroScene = lazy(() => import("./Scene3D").then((module) => ({ default: module.HeroScene })));
 
 export function Hero() {
   return (
